@@ -28,3 +28,18 @@
 #' 
 "nn5"
 
+
+#' NNGC1 data
+#' 
+#' Data from the NNGC1 forecasting competition, comprising 11 annual time series, 11
+#' quarterly time series, 11 monthly time series, 11 weekly time series, 11 daily
+#' time series and 11 hourly time series.  Only training data are provided.
+#' 
+#' @format A list of time series data, each of class \code{ts} or \code{msts}.
+#' @source  \url{http://www.neural-forecasting-competition.com/}.
+#' @keywords datasets
+#' @examples
+#' plot(nngc1[[100]])
+#' 
+"nngc1"
+
