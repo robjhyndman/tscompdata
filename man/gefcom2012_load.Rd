@@ -6,6 +6,7 @@
 \title{GEFCOM2012 load data}
 \format{A list of time series data, each of class \code{msts}.}
 \source{
+\url{https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting},
 \url{http://www.drhongtao.com/gefcom/2012}.
 }
 \usage{

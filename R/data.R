@@ -28,7 +28,6 @@
 #' 
 "nn5"
 
-
 #' NNGC1 data
 #' 
 #' Data from the NNGC1 forecasting competition, comprising 11 annual time series, 11
@@ -50,12 +49,12 @@
 #' The missing data in each series formed the test sets.
 #' 
 #' @format A list of time series data, each of class \code{msts}.
-#' @source  \url{http://www.drhongtao.com/gefcom/2012}.
+#' @source  \url{https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting},
+#' \url{http://www.drhongtao.com/gefcom/2012}.
 #' @keywords datasets
 #' @examples
 #' plot(gefcom2012_load[[1]])
 "gefcom2012_load"
-
 
 #' GEFCOM2012 temperature data
 #' 
@@ -63,8 +62,24 @@
 #' hourly temperature data from 11 weather stations in the United States.
 #' 
 #' @format A list of time series data, each of class \code{msts}.
-#' @source  \url{http://www.drhongtao.com/gefcom/2012}.
+#' @source  \url{https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting},
+#' \url{http://www.drhongtao.com/gefcom/2012}.
 #' @keywords datasets
 #' @examples
 #' plot(gefcom2012_temp[[1]])
 "gefcom2012_temp"
+
+#' GEFCOM2012 wind power data
+#' 
+#' Data from the GEFCOM2012 forecasting competition, comprising 7 hourly time series containing
+#' wind power data from 7 wind farms. Only training data are provided.
+#' The missing data in each series formed the test sets.
+#' 
+#' @format A list of time series data, each of class \code{msts}.
+#' @source  \url{https://www.kaggle.com/c/GEF2012-wind-forecasting/data},
+#' \url{http://www.drhongtao.com/gefcom/2012}.
+#' @keywords datasets
+#' @keywords datasets
+#' @examples
+#' plot(gefcom2012_wp[[1]])
+"gefcom2012_wp"
