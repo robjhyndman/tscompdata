@@ -14,9 +14,11 @@ packages.}
 A list of time series
 }
 \description{
-For each time series, the training data and test data are combined into
-a single \code{ts} object.
+The data in the Mcomp and Tcomp packages are in the \code{Mcomp} class which
+contains various information used in the competitions including the training
+and test portions of the time series. This function combines
+the training data and test data into a single \code{ts} object.
 }
 \examples{
-m3 <- combine_training_test(M3)
+m3ts <- combine_training_test(M3)
 }
