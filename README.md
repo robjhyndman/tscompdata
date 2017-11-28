@@ -24,9 +24,6 @@ Usage
 
 ``` r
 library(tscompdata)
-#> Loading required package: Mcomp
-#> Loading required package: forecast
-#> Loading required package: Tcomp
 library(forecast)
 library(ggplot2)
 autoplot(nn5[[23]])

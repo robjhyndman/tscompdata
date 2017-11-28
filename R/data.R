@@ -43,3 +43,28 @@
 #' 
 "nngc1"
 
+#' GEFCOM2012 load data
+#' 
+#' Data from the GEFCOM2012 forecasting competition, comprising 20 time series containing
+#' hourly load data from 20 zones in the United States. Only training data are provided.
+#' The missing data in each series formed the test sets.
+#' 
+#' @format A list of time series data, each of class \code{msts}.
+#' @source  \url{http://www.drhongtao.com/gefcom/2012}.
+#' @keywords datasets
+#' @examples
+#' plot(gefcom2012_load[[1]])
+"gefcom2012_load"
+
+
+#' GEFCOM2012 temperature data
+#' 
+#' Data from the GEFCOM2012 forecasting competition, comprising 11 time series containing
+#' hourly temperature data from 11 weather stations in the United States.
+#' 
+#' @format A list of time series data, each of class \code{msts}.
+#' @source  \url{http://www.drhongtao.com/gefcom/2012}.
+#' @keywords datasets
+#' @examples
+#' plot(gefcom2012_temp[[1]])
+"gefcom2012_temp"
