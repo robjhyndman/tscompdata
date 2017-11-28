@@ -17,7 +17,7 @@ quarterly time series, 11 monthly time series, 11 weekly time series, 11 daily
 time series and 11 hourly time series.  Only training data are provided.
 }
 \examples{
-plot(nngc1[[100]])
+plot(nngc1[[1]])
 
 }
 \keyword{datasets}

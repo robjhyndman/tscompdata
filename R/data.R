@@ -38,7 +38,7 @@
 #' @source  \url{http://www.neural-forecasting-competition.com/}.
 #' @keywords datasets
 #' @examples
-#' plot(nngc1[[100]])
+#' plot(nngc1[[1]])
 #' 
 "nngc1"
 
