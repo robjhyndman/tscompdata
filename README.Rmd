@@ -1,0 +1,46 @@
+---
+output: github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "READMEfigs/",
+  cache = TRUE
+)
+```
+
+# tscompdata
+
+[![Pending Pull-Requests](http://githubbadges.herokuapp.com/robjhyndman/tscompdata/pulls.svg?style=flat)](https://github.com/robjhyndman/tscompdata/pulls)
+
+The R package *tscompdata* provides time series data from the following forecasting competitions: M, M3, NN3, NN5, NNGC1, Tourism, GEFCom2012, GEFCom2014 and GEFCom2017,  along with some tools for plotting the data.
+
+The M, M3 and Tourism data are loaded from the Mcomp and Tcomp packages. The remaining data are contained within the tscompdata package.
+
+## Installation
+
+You can install the **development** version from [Github](https://github.com/robjhyndman/tscompdata) with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("robjhyndman/tscompdata")
+```
+
+## Usage
+
+```{r nn5}
+library(tscompdata)
+library(forecast)
+library(ggplot2)
+autoplot(nn5[[23]])
+```
+
+## License
+
+This package is free and open source software, licensed under GPL-3.
