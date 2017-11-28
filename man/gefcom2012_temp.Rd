@@ -19,4 +19,9 @@ hourly temperature data from 11 weather stations in the United States.
 \examples{
 plot(gefcom2012_temp[[1]])
 }
+\references{
+Hong, T., Pinson, P., & Fan, S. (2014). Global energy forecasting competition 2012. 
+\emph{International Journal of Forecasting}, 30(2), 357-363.
+\url{https://doi.org/10.1016/j.ijforecast.2013.07.001}.
+}
 \keyword{datasets}
