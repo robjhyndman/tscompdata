@@ -4,7 +4,7 @@
 \name{nn3}
 \alias{nn3}
 \title{NN3 data}
-\format{A list of time series data}
+\format{A list of time series data, each of class \code{ts}.}
 \source{
 \url{http://www.neural-forecasting-competition.com/NN3}.
 }
