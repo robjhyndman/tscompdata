@@ -5,7 +5,7 @@ tscompdata
 
 [![Pending Pull-Requests](http://githubbadges.herokuapp.com/robjhyndman/tscompdata/pulls.svg?style=flat)](https://github.com/robjhyndman/tscompdata/pulls)
 
-The R package *tscompdata* provides time series data from the following forecasting competitions: M, M3, NN3, NN5, NNGC1, Tourism, GEFCom2012, GEFCom2014 and GEFCom2017, along with some tools for plotting the data.
+The R package *tscompdata* provides time series data from the following forecasting competitions: M, M3, NN3, NN5, NNGC1, Tourism and GEFCom2012.
 
 The M, M3 and Tourism data are loaded from the Mcomp and Tcomp packages. The remaining data are contained within the tscompdata package.
 
