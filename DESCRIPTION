@@ -8,7 +8,7 @@ Depends: R (>= 3.4.2), Mcomp, Tcomp
 Imports:
   stats,
   purrr,
-  forecast
+  forecast (>= 8.3)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
