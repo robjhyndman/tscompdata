@@ -1,7 +1,7 @@
 Package: tscompdata
 Title: Time series data from various forecasting competitions
 Version: 0.0.1
-Authors@R: person("Rob", "Hyndman", email = "Rob.Hyndman@monash.edu", role = c("aut", "cre"))
+Authors@R: person("Rob", "Hyndman", email="Rob.Hyndman@monash.edu", role=c("aut", "cre", "cph"), comment = c(ORCID = "0000-0002-2140-5352"))
 Description:
       Time series data from the following forecasting competitions are provided: M, M3, NN3, NN5, NNGC1, Tourism, and GEFCom2012.
 Depends: R (>= 3.4.2), Mcomp, Tcomp
@@ -10,10 +10,12 @@ Imports:
   purrr,
   forecast (>= 8.3)
 License: GPL-3
+URL: https://github.com/robjhyndman/tscompdata
+BugReports: https://github.com/robjhyndman/tscompdata/issues
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr

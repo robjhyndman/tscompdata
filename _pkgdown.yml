@@ -1,0 +1,50 @@
+template:
+  params:
+    bootswatch: flatly
+
+authors:
+  Rob Hyndman:
+    href: http://robjhyndman.com
+
+navbar:
+  structure:
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - tutorials
+    - news
+    right: github
+  components:
+    home:
+      icon: fa-home fa-lg
+      href: index.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    intro:
+      text: Get started
+      href: articles/tscompdata.html
+    github:
+      icon: fa-github fa-lg
+      href: https://github.com/robjhyndman/tscompdata
+
+
+
+
+
+reference:
+  - title: "Data"
+    desc: "Data sets in the tscompdata package"
+    contents:
+      - gefcom2012_load
+      - gefcom2012_temp
+      - gefcom2012_wp
+      - nn3
+      - nn5
+      - nngc1
+  - title: "Functions"
+    desc: "Functions for combining data"
+    contents:
+      - combine_training_test
