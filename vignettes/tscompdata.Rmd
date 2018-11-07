@@ -1,5 +1,5 @@
 ---
-title: "Introduction to tscompdata package"
+title: "Introduction to the tscompdata package"
 author: "Yangzhuoran Yang"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 
 The R package *tscompdata* provides time series data from the following forecasting competitions: M, M3, NN3, NN5, NNGC1, Tourism and GEFCom2012.
 
-The M, M3 and Tourism data are loaded from the Mcomp and Tcomp packages. The remaining data are contained within the tscompdata package.
+The M, M3 and Tourism data are loaded from the [Mcomp](http://pkg.robjhyndman.com/Mcomp/) and [Tcomp](https://github.com/ellisp/Tcomp-r-package) packages. The remaining data are contained within the tscompdata package.
 
 ## Installation
 
@@ -36,37 +36,29 @@ devtools::install_github("robjhyndman/tscompdata")
 
 ```{r}
 library(tscompdata)
-library(forecast)
 library(ggplot2)
 ```
 
+### NN3 data
 
-
-
-
-### NN3 data  
-
-Data from the [NN3 forecasting competition](http://www.neural-forecasting-competition.com/NN3), comprising 111 monthly time series each of class `ts`.  
+Data from the [NN3 forecasting competition](http://www.neural-forecasting-competition.com/NN3), comprising 111 monthly time series each of class `ts`.
 
 Training and test data are combined. In the competition, the last 18 months
 were used as test data. Time series NN3-101 to NN3-111 made up the reduced data
-set from the competition.  
+set from the competition.
 
 ```{r nn3}
 head(nn3[[1]])
 autoplot(nn3[[1]])
 ```
 
+### NN5 data
 
-
-
-### NN5 data  
-
-Data from the [NN5 forecasting competition](http://www.neural-forecasting-competition.com/NN5), comprising 111 daily time series each of lass `msts`.  
+Data from the [NN5 forecasting competition](http://www.neural-forecasting-competition.com/NN5), comprising 111 daily time series each of lass `msts`.
 
 Training and test data are combined. In the competition, the last 56 days
 were used as test data. Time series NN5-101 to NN5-111 made up the reduced data
-set from the competition.  
+set from the competition.
 
 ```{r nn5}
 head(nn3[[2]])
@@ -75,31 +67,26 @@ autoplot(nn5[[2]])
 
 ### NNGC1 data
 
-Data from the [NNGC1 forecasting competition](http://www.neural-forecasting-competition.com/), comprising 11 annual time series, 11 quarterly time series, 11 monthly time series, 11 weekly time series, 11 daily time series and 11 hourly time series each of class `ts` or `msts`.  Only training data are provided.  
+Data from the [NNGC1 forecasting competition](http://www.neural-forecasting-competition.com/), comprising 11 annual time series, 11 quarterly time series, 11 monthly time series, 11 weekly time series, 11 daily time series and 11 hourly time series each of class `ts` or `msts`.  Only training data are provided.
 
 ```{r}
 head(nngc1[[3]])
 autoplot(nngc1[[3]])
 ```
 
+### GEFCOM2012 load data
 
-### GEFCOM2012 load data  
-
-Data from the [GEFCOM2012 forecasting competition](http://www.drhongtao.com/gefcom/2012) which held on t[he kaggle platform](https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting), comprising 20 time series containing hourly load data from 20 zones in the United States, each of class `msts`. Only training data are provided.  
+Data from the [GEFCOM2012 forecasting competition](http://www.drhongtao.com/gefcom/2012) which was hosted on the [kaggle platform](https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting). The data comprise 20 time series containing hourly load data from 20 zones in the United States, each of class `msts`. Only training data are provided.
 The missing data in each series formed the test sets.
-
 
 ```{r}
 head(gefcom2012_load[[4]])
 autoplot(gefcom2012_load[[4]])
 ```
 
-
 ### GEFCOM2012 temperature data
 
-Data from the [GEFCOM2012 forecasting competition](http://www.drhongtao.com/gefcom/2012) which held on t[he kaggle platform](https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting), comprising 11 time series containing hourly temperature data from 11 weather stations in the United States, each of class `msts`.
-
-
+Data from the [GEFCOM2012 forecasting competition](http://www.drhongtao.com/gefcom/2012) which held on the [kaggle platform](https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting). The data comprise 11 time series containing hourly temperature data from 11 weather stations in the United States, each of class `msts`.
 
 ```{r}
 head(gefcom2012_temp[[5]])
@@ -108,8 +95,7 @@ autoplot(gefcom2012_temp[[5]])
 
 ### GEFCOM2012 wind power data
 
-Data from the [GEFCOM2012 forecasting competition](http://www.drhongtao.com/gefcom/2012) which held on t[he kaggle platform](https://www.kaggle.com/c/GEF2012-wind-forecasting/data), comprising 7 hourly time series containing wind power data from 7 wind farms, each of class `msts`. Only training data are provided.  
-
+Data from the [GEFCOM2012 forecasting competition](http://www.drhongtao.com/gefcom/2012) which held on the [kaggle platform](https://www.kaggle.com/c/GEF2012-wind-forecasting/data). The data comprise 7 hourly time series containing wind power data from 7 wind farms, each of class `msts`. Only training data are provided.
 The missing data in each series formed the test sets.
 
 ```{r}
@@ -117,11 +103,11 @@ head(gefcom2012_wp[[6]])
 autoplot(gefcom2012_wp[[6]])
 ```
 
-### `Mcomp`: M1 data  
+### Mcomp: M1 data
 
-The 1001 time series from M competition,  taken from demography, industry and economics, and ranged in length between 9 and 132 observations. All the data were either non-seasonal (e.g., annual), quarterly or monthly. Curiously, all the data were positive, which made it possibly to compute mean absolute percentage errors, but was not really reflective of the population of real data.  
+The 1001 time series from the M competition, taken from demography, industry and economics, and ranging in length between 9 and 132 observations. All the data were either non-seasonal (e.g., annual), quarterly or monthly. All the data were positive, which made it possibly to compute mean absolute percentage errors, but is not really reflective of the population of real data.
 
-`M1` is of class `Mcomp` with each time series of class `Mdata`. The function `subset` inherited from `Mcomp` package can return a subset specified by periods, or types of data or both. See `Mcomp` package for more details.  
+`M1` is of class `Mcomp` with each time series of class `Mdata`. The function `subset` inherited from the [Mcomp](http://pkg.robjhyndman.com/Mcomp/) package can return a subset specified by periods, or types of data or both. See the [Mcomp](http://pkg.robjhyndman.com/Mcomp/) package for more details.
 
 ```{r  fig.width = 5,  fig.height = 3}
 M1
@@ -129,24 +115,21 @@ autoplot(M1[[7]])
 subset(M1,"monthly")
 ```
 
-The 111 series used in the extended comparisons in the 1982 M-competition can be selected.  
+The 111 series used in the extended comparisons in the 1982 M-competition can be selected as follows.
 
 ```{r}
 subset(M1,111)
 ```
 
-The data in the `Mcomp` package and `Tcomp` package are in the `Mcomp` class which contains various information used in the competitions including the training and test portions of the time series. The function `combine_training_test` combines the training data and test data into a single `ts` object.  
+The data in the [Mcomp](http://pkg.robjhyndman.com/Mcomp/) and [Tcomp](https://github.com/ellisp/Tcomp-r-package) packages are in the `Mcomp` class which contains various information used in the competitions including the training and test portions of the time series. The function `combine_training_test` combines the training data and test data into a single `ts` object.
 
 ```{r}
 m1ts <- combine_training_test(M1)
 ```
 
+### Mcomp: M3 data
 
-### `Mcomp`: M3 data  
-
-The time series from the M3 forecasting competition and the forecasts from all the original participating methods are stored in `M3` and `M3Forecast` in `Mcomp` package respectively.  
-`M3` is a list of 3003 series of class `Mcomp`. Each series within M3 is of class `Mdata`. `M3Forecast` is a list of data.frames.  
-See `Mcomp` package for more details.
+The time series from the M3 forecasting competition and the forecasts from all the original participating methods are stored in `M3` and `M3Forecast`. `M3` is a list of 3003 series of class `Mcomp`. Each series within M3 is of class `Mdata`. `M3Forecast` is a list of data.frames. See the [Mcomp](http://pkg.robjhyndman.com/Mcomp/) package for more details.
 
 ```{r  fig.width = 5,  fig.height = 3}
 M3
@@ -154,18 +137,16 @@ autoplot(M3[[8]])
 subset(M3, "macro")
 ```
 
-### `Tcomp`: tourism forecasting competition data  
+### Tcomp: tourism forecasting competition data
 
-Data from the [tourism forecasting competition](https://robjhyndman.com/publications/the-tourism-forecasting-competition/) described in Athanasopoulos, Hyndman, Song and Wu (2011).  
+Data from the [tourism forecasting competition](https://robjhyndman.com/publications/the-tourism-forecasting-competition/) described in Athanasopoulos, Hyndman, Song and Wu (2011).
 
-`tourism` is a list of 1,311 series of class `Mcomp`, and each individual series is an element of class `Mdata`. See `Tcomp` package for more details.  
+`tourism` is a list of 1,311 series of class `Mcomp`, and each individual series is an element of class `Mdata`. See the [Tcomp](https://github.com/ellisp/Tcomp-r-package) package for more details.
 
 ```{r  fig.width = 5,  fig.height = 3}
 tourism
 autoplot(tourism[[9]])
 ```
-
-
 
 ## Sources
 
