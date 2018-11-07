@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introduction to tscompdata package • tscompdata</title>
+<title>Introduction to the tscompdata package • tscompdata</title>
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js" integrity="sha256-hIvIxeqhGZF+VVeM55k0mJvWpQ6gTkWk3Emc+NmowYA=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="Introduction to tscompdata package">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Introduction to the tscompdata package">
 <meta property="og:description" content="">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
@@ -69,7 +69,7 @@
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1>Introduction to tscompdata package</h1>
+      <h1>Introduction to the tscompdata package</h1>
                         <h4 class="author">Yangzhuoran Yang</h4>
             
             <h4 class="date">2018-11-08</h4>
@@ -85,7 +85,7 @@
 <h1 class="hasAnchor">
 <a href="#tscompdata" class="anchor"></a>tscompdata</h1>
 <p>The R package <em>tscompdata</em> provides time series data from the following forecasting competitions: M, M3, NN3, NN5, NNGC1, Tourism and GEFCom2012.</p>
-<p>The M, M3 and Tourism data are loaded from the Mcomp and Tcomp packages. The remaining data are contained within the tscompdata package.</p>
+<p>The M, M3 and Tourism data are loaded from the <a href="http://pkg.robjhyndman.com/Mcomp/">Mcomp</a> and <a href="https://github.com/ellisp/Tcomp-r-package">Tcomp</a> packages. The remaining data are contained within the tscompdata package.</p>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -100,8 +100,7 @@
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="co">#&gt; Loading required package: Mcomp</span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co">#&gt; Loading required package: forecast</span></a>
 <a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co">#&gt; Loading required package: Tcomp</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="kw">library</span>(forecast)</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="kw">library</span>(ggplot2)</a></code></pre></div>
+<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="kw">library</span>(ggplot2)</a></code></pre></div>
 <div id="nn3-data" class="section level3">
 <h3 class="hasAnchor">
 <a href="#nn3-data" class="anchor"></a>NN3 data</h3>
@@ -110,7 +109,7 @@
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">head</span>(nn3[[<span class="dv">1</span>]])</a>
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">#&gt;       Jan  Feb  Mar  Apr  May  Jun</span></a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; 1990 5520 3940 4490 5030 5660 4790</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(nn3[[<span class="dv">1</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(nn3[[<span class="dv">1</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/nn3-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="nn5-data" class="section level3">
@@ -121,7 +120,7 @@
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">head</span>(nn3[[<span class="dv">2</span>]])</a>
 <a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt;       Jan  Feb  Mar  Apr  May  Jun</span></a>
 <a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt; 1990 5080 3690 4260 3920 4290 3840</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(nn5[[<span class="dv">2</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(nn5[[<span class="dv">2</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/nn5-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="nngc1-data" class="section level3">
@@ -134,55 +133,53 @@
 <a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co">#&gt; End = 1979 </span></a>
 <a class="sourceLine" id="cb5-5" data-line-number="5"><span class="co">#&gt; Frequency = 1 </span></a>
 <a class="sourceLine" id="cb5-6" data-line-number="6"><span class="co">#&gt; [1]  40.833  85.797  95.567  99.921 106.035 106.587</span></a>
-<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(nngc1[[<span class="dv">3</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(nngc1[[<span class="dv">3</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/unnamed-chunk-2-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="gefcom2012-load-data" class="section level3">
 <h3 class="hasAnchor">
 <a href="#gefcom2012-load-data" class="anchor"></a>GEFCOM2012 load data</h3>
-<p>Data from the <a href="http://www.drhongtao.com/gefcom/2012">GEFCOM2012 forecasting competition</a> which held on t<a href="https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting">he kaggle platform</a>, comprising 20 time series containing hourly load data from 20 zones in the United States, each of class <code>msts</code>. Only training data are provided.<br>
-The missing data in each series formed the test sets.</p>
+<p>Data from the <a href="http://www.drhongtao.com/gefcom/2012">GEFCOM2012 forecasting competition</a> which was hosted on the <a href="https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting">kaggle platform</a>. The data comprise 20 time series containing hourly load data from 20 zones in the United States, each of class <code>msts</code>. Only training data are provided. The missing data in each series formed the test sets.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">head</span>(gefcom2012_load[[<span class="dv">4</span>]])</a>
 <a class="sourceLine" id="cb6-2" data-line-number="2"><span class="co">#&gt; Multi-Seasonal Time Series:</span></a>
 <a class="sourceLine" id="cb6-3" data-line-number="3"><span class="co">#&gt; Start: 2004 1</span></a>
 <a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co">#&gt; Seasonal Periods: 24 168 8766</span></a>
 <a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co">#&gt; Data:</span></a>
 <a class="sourceLine" id="cb6-6" data-line-number="6"><span class="co">#&gt; [1] 484 457 450 448 444 490</span></a>
-<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(gefcom2012_load[[<span class="dv">4</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb6-7" data-line-number="7"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(gefcom2012_load[[<span class="dv">4</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/unnamed-chunk-3-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="gefcom2012-temperature-data" class="section level3">
 <h3 class="hasAnchor">
 <a href="#gefcom2012-temperature-data" class="anchor"></a>GEFCOM2012 temperature data</h3>
-<p>Data from the <a href="http://www.drhongtao.com/gefcom/2012">GEFCOM2012 forecasting competition</a> which held on t<a href="https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting">he kaggle platform</a>, comprising 11 time series containing hourly temperature data from 11 weather stations in the United States, each of class <code>msts</code>.</p>
+<p>Data from the <a href="http://www.drhongtao.com/gefcom/2012">GEFCOM2012 forecasting competition</a> which held on the <a href="https://www.kaggle.com/c/global-energy-forecasting-competition-2012-load-forecasting">kaggle platform</a>. The data comprise 11 time series containing hourly temperature data from 11 weather stations in the United States, each of class <code>msts</code>.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">head</span>(gefcom2012_temp[[<span class="dv">5</span>]])</a>
 <a class="sourceLine" id="cb7-2" data-line-number="2"><span class="co">#&gt; Multi-Seasonal Time Series:</span></a>
 <a class="sourceLine" id="cb7-3" data-line-number="3"><span class="co">#&gt; Start: 2004 1</span></a>
 <a class="sourceLine" id="cb7-4" data-line-number="4"><span class="co">#&gt; Seasonal Periods: 24 168 8766</span></a>
 <a class="sourceLine" id="cb7-5" data-line-number="5"><span class="co">#&gt; Data:</span></a>
 <a class="sourceLine" id="cb7-6" data-line-number="6"><span class="co">#&gt; [1] 42 42 40 39 40 41</span></a>
-<a class="sourceLine" id="cb7-7" data-line-number="7"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(gefcom2012_temp[[<span class="dv">5</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb7-7" data-line-number="7"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(gefcom2012_temp[[<span class="dv">5</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/unnamed-chunk-4-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="gefcom2012-wind-power-data" class="section level3">
 <h3 class="hasAnchor">
 <a href="#gefcom2012-wind-power-data" class="anchor"></a>GEFCOM2012 wind power data</h3>
-<p>Data from the <a href="http://www.drhongtao.com/gefcom/2012">GEFCOM2012 forecasting competition</a> which held on t<a href="https://www.kaggle.com/c/GEF2012-wind-forecasting/data">he kaggle platform</a>, comprising 7 hourly time series containing wind power data from 7 wind farms, each of class <code>msts</code>. Only training data are provided.</p>
-<p>The missing data in each series formed the test sets.</p>
+<p>Data from the <a href="http://www.drhongtao.com/gefcom/2012">GEFCOM2012 forecasting competition</a> which held on the <a href="https://www.kaggle.com/c/GEF2012-wind-forecasting/data">kaggle platform</a>. The data comprise 7 hourly time series containing wind power data from 7 wind farms, each of class <code>msts</code>. Only training data are provided. The missing data in each series formed the test sets.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">head</span>(gefcom2012_wp[[<span class="dv">6</span>]])</a>
 <a class="sourceLine" id="cb8-2" data-line-number="2"><span class="co">#&gt; Multi-Seasonal Time Series:</span></a>
 <a class="sourceLine" id="cb8-3" data-line-number="3"><span class="co">#&gt; Start: 2009 4384</span></a>
 <a class="sourceLine" id="cb8-4" data-line-number="4"><span class="co">#&gt; Seasonal Periods: 24 168 8766</span></a>
 <a class="sourceLine" id="cb8-5" data-line-number="5"><span class="co">#&gt; Data:</span></a>
 <a class="sourceLine" id="cb8-6" data-line-number="6"><span class="co">#&gt; [1] 0.118 0.066 0.026 0.013 0.000 0.013</span></a>
-<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(gefcom2012_wp[[<span class="dv">6</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb8-7" data-line-number="7"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(gefcom2012_wp[[<span class="dv">6</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/unnamed-chunk-5-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="mcomp-m1-data" class="section level3">
 <h3 class="hasAnchor">
-<a href="#mcomp-m1-data" class="anchor"></a><code>Mcomp</code>: M1 data</h3>
-<p>The 1001 time series from M competition, taken from demography, industry and economics, and ranged in length between 9 and 132 observations. All the data were either non-seasonal (e.g., annual), quarterly or monthly. Curiously, all the data were positive, which made it possibly to compute mean absolute percentage errors, but was not really reflective of the population of real data.</p>
-<p><code>M1</code> is of class <code>Mcomp</code> with each time series of class <code>Mdata</code>. The function <code>subset</code> inherited from <code>Mcomp</code> package can return a subset specified by periods, or types of data or both. See <code>Mcomp</code> package for more details.</p>
+<a href="#mcomp-m1-data" class="anchor"></a>Mcomp: M1 data</h3>
+<p>The 1001 time series from the M competition, taken from demography, industry and economics, and ranging in length between 9 and 132 observations. All the data were either non-seasonal (e.g., annual), quarterly or monthly. All the data were positive, which made it possibly to compute mean absolute percentage errors, but is not really reflective of the population of real data.</p>
+<p><code>M1</code> is of class <code>Mcomp</code> with each time series of class <code>Mdata</code>. The function <code>subset</code> inherited from the <a href="http://pkg.robjhyndman.com/Mcomp/">Mcomp</a> package can return a subset specified by periods, or types of data or both. See the <a href="http://pkg.robjhyndman.com/Mcomp/">Mcomp</a> package for more details.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">M1</a>
 <a class="sourceLine" id="cb9-2" data-line-number="2"><span class="co">#&gt; M-Competition data: 1001 time series </span></a>
 <a class="sourceLine" id="cb9-3" data-line-number="3"><span class="co">#&gt; </span></a>
@@ -192,7 +189,7 @@ The missing data in each series formed the test sets.</p>
 <a class="sourceLine" id="cb9-7" data-line-number="7"><span class="co">#&gt;   QUARTERLY     39     18     45     59      5     21     16   203</span></a>
 <a class="sourceLine" id="cb9-8" data-line-number="8"><span class="co">#&gt;   YEARLY        30     35     30     29     16     29     12   181</span></a>
 <a class="sourceLine" id="cb9-9" data-line-number="9"><span class="co">#&gt;   Total        144    236    139    180     31    139    132  1001</span></a>
-<a class="sourceLine" id="cb9-10" data-line-number="10"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(M1[[<span class="dv">7</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb9-10" data-line-number="10"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(M1[[<span class="dv">7</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/unnamed-chunk-6-1.png" width="480" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">subset</span>(M1,<span class="st">"monthly"</span>)</a>
 <a class="sourceLine" id="cb10-2" data-line-number="2"><span class="co">#&gt; M-Competition data: 617 MONTHLY time series</span></a>
@@ -200,7 +197,7 @@ The missing data in each series formed the test sets.</p>
 <a class="sourceLine" id="cb10-4" data-line-number="4"><span class="co">#&gt;          Type of data</span></a>
 <a class="sourceLine" id="cb10-5" data-line-number="5"><span class="co">#&gt; Period    DEMOGR INDUST MACRO1 MACRO2 MICRO1 MICRO2 MICRO3</span></a>
 <a class="sourceLine" id="cb10-6" data-line-number="6"><span class="co">#&gt;   MONTHLY     75    183     64     92     10     89    104</span></a></code></pre></div>
-<p>The 111 series used in the extended comparisons in the 1982 M-competition can be selected.</p>
+<p>The 111 series used in the extended comparisons in the 1982 M-competition can be selected as follows.</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">subset</span>(M1,<span class="dv">111</span>)</a>
 <a class="sourceLine" id="cb11-2" data-line-number="2"><span class="co">#&gt; M-Competition data: 111 time series </span></a>
 <a class="sourceLine" id="cb11-3" data-line-number="3"><span class="co">#&gt; </span></a>
@@ -210,14 +207,13 @@ The missing data in each series formed the test sets.</p>
 <a class="sourceLine" id="cb11-7" data-line-number="7"><span class="co">#&gt;   QUARTERLY      5      2      5      6      0      3      2    23</span></a>
 <a class="sourceLine" id="cb11-8" data-line-number="8"><span class="co">#&gt;   YEARLY         3      4      4      3      2      3      1    20</span></a>
 <a class="sourceLine" id="cb11-9" data-line-number="9"><span class="co">#&gt;   Total         16     27     17     18      3     16     14   111</span></a></code></pre></div>
-<p>The data in the <code>Mcomp</code> package and <code>Tcomp</code> package are in the <code>Mcomp</code> class which contains various information used in the competitions including the training and test portions of the time series. The function <code>combine_training_test</code> combines the training data and test data into a single <code>ts</code> object.</p>
+<p>The data in the <a href="http://pkg.robjhyndman.com/Mcomp/">Mcomp</a> and <a href="https://github.com/ellisp/Tcomp-r-package">Tcomp</a> packages are in the <code>Mcomp</code> class which contains various information used in the competitions including the training and test portions of the time series. The function <code>combine_training_test</code> combines the training data and test data into a single <code>ts</code> object.</p>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">m1ts &lt;-<span class="st"> </span><span class="kw"><a href="../reference/combine_training_test.html">combine_training_test</a></span>(M1)</a></code></pre></div>
 </div>
 <div id="mcomp-m3-data" class="section level3">
 <h3 class="hasAnchor">
-<a href="#mcomp-m3-data" class="anchor"></a><code>Mcomp</code>: M3 data</h3>
-<p>The time series from the M3 forecasting competition and the forecasts from all the original participating methods are stored in <code>M3</code> and <code>M3Forecast</code> in <code>Mcomp</code> package respectively.<br><code>M3</code> is a list of 3003 series of class <code>Mcomp</code>. Each series within M3 is of class <code>Mdata</code>. <code>M3Forecast</code> is a list of data.frames.<br>
-See <code>Mcomp</code> package for more details.</p>
+<a href="#mcomp-m3-data" class="anchor"></a>Mcomp: M3 data</h3>
+<p>The time series from the M3 forecasting competition and the forecasts from all the original participating methods are stored in <code>M3</code> and <code>M3Forecast</code>. <code>M3</code> is a list of 3003 series of class <code>Mcomp</code>. Each series within M3 is of class <code>Mdata</code>. <code>M3Forecast</code> is a list of data.frames. See the <a href="http://pkg.robjhyndman.com/Mcomp/">Mcomp</a> package for more details.</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1">M3</a>
 <a class="sourceLine" id="cb13-2" data-line-number="2"><span class="co">#&gt; M-Competition data: 3003 time series </span></a>
 <a class="sourceLine" id="cb13-3" data-line-number="3"><span class="co">#&gt; </span></a>
@@ -228,7 +224,7 @@ See <code>Mcomp</code> package for more details.</p>
 <a class="sourceLine" id="cb13-8" data-line-number="8"><span class="co">#&gt;   QUARTERLY          57      76       83   336   204     0   756</span></a>
 <a class="sourceLine" id="cb13-9" data-line-number="9"><span class="co">#&gt;   YEARLY            245      58      102    83   146    11   645</span></a>
 <a class="sourceLine" id="cb13-10" data-line-number="10"><span class="co">#&gt;   Total             413     308      519   731   828   204  3003</span></a>
-<a class="sourceLine" id="cb13-11" data-line-number="11"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(M3[[<span class="dv">8</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb13-11" data-line-number="11"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(M3[[<span class="dv">8</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/unnamed-chunk-9-1.png" width="480" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1"><span class="kw">subset</span>(M3, <span class="st">"macro"</span>)</a>
 <a class="sourceLine" id="cb14-2" data-line-number="2"><span class="co">#&gt; M-Competition data: 731 MACRO time series</span></a>
@@ -241,9 +237,9 @@ See <code>Mcomp</code> package for more details.</p>
 </div>
 <div id="tcomp-tourism-forecasting-competition-data" class="section level3">
 <h3 class="hasAnchor">
-<a href="#tcomp-tourism-forecasting-competition-data" class="anchor"></a><code>Tcomp</code>: tourism forecasting competition data</h3>
+<a href="#tcomp-tourism-forecasting-competition-data" class="anchor"></a>Tcomp: tourism forecasting competition data</h3>
 <p>Data from the <a href="https://robjhyndman.com/publications/the-tourism-forecasting-competition/">tourism forecasting competition</a> described in Athanasopoulos, Hyndman, Song and Wu (2011).</p>
-<p><code>tourism</code> is a list of 1,311 series of class <code>Mcomp</code>, and each individual series is an element of class <code>Mdata</code>. See <code>Tcomp</code> package for more details.</p>
+<p><code>tourism</code> is a list of 1,311 series of class <code>Mcomp</code>, and each individual series is an element of class <code>Mdata</code>. See the <a href="https://github.com/ellisp/Tcomp-r-package">Tcomp</a> package for more details.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1">tourism</a>
 <a class="sourceLine" id="cb15-2" data-line-number="2"><span class="co">#&gt; M-Competition data: 1311 TOURISM time series</span></a>
 <a class="sourceLine" id="cb15-3" data-line-number="3"><span class="co">#&gt; </span></a>
@@ -252,7 +248,7 @@ See <code>Mcomp</code> package for more details.</p>
 <a class="sourceLine" id="cb15-6" data-line-number="6"><span class="co">#&gt;   MONTHLY       366</span></a>
 <a class="sourceLine" id="cb15-7" data-line-number="7"><span class="co">#&gt;   QUARTERLY     427</span></a>
 <a class="sourceLine" id="cb15-8" data-line-number="8"><span class="co">#&gt;   YEARLY        518</span></a>
-<a class="sourceLine" id="cb15-9" data-line-number="9"><span class="kw"><a href="http://www.rdocumentation.org/packages/forecast/topics/reexports">autoplot</a></span>(tourism[[<span class="dv">9</span>]])</a></code></pre></div>
+<a class="sourceLine" id="cb15-9" data-line-number="9"><span class="kw"><a href="ggplot2.tidyverse.org/reference/autoplot.html">autoplot</a></span>(tourism[[<span class="dv">9</span>]])</a></code></pre></div>
 <p><img src="tscompdata_files/figure-html/unnamed-chunk-10-1.png" width="480" style="display: block; margin: auto;"></p>
 </div>
 </div>
