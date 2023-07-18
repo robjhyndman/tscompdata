@@ -17,6 +17,7 @@ authors:
   Rob Hyndman:
     href: http://robjhyndman.com
 navbar:
+  type: light
   structure:
     left:
     - home
@@ -55,4 +56,3 @@ reference:
 - title: Functions
   desc: Functions for combining data
   contents: combine_training_test
-
