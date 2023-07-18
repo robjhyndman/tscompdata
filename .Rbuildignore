@@ -7,3 +7,4 @@
 ^README\_.*$
 ^READMEfigs
 ^pkgdown$
+^\.github$

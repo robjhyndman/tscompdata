@@ -15,3 +15,4 @@ vignettes/*.pdf
 *.Rproj
 README_cache
 inst/doc
+docs
