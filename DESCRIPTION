@@ -10,7 +10,7 @@ Imports:
   purrr,
   forecast (>= 8.3)
 License: GPL-3
-URL: https://github.com/robjhyndman/tscompdata, http://pkg.robjhyndman.com/tscompdata/
+URL: https://pkg.robjhyndman.com/tscompdata/, https://github.com/robjhyndman/tscompdata,
 BugReports: https://github.com/robjhyndman/tscompdata/issues
 Encoding: UTF-8
 LazyData: true
