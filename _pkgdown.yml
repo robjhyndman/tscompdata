@@ -40,6 +40,9 @@ navbar:
       icon: fa-github fa-lg
       href: https://github.com/robjhyndman/tscompdata
 reference:
+- title: Package
+  contents:
+  - tscompdata
 - title: Data
   desc: Data sets in the tscompdata package
   contents:
